@@ -30,6 +30,10 @@ input,select,textarea,button{font-family:inherit}
 @media (max-width: 960px){.nav-links{display:none !important}.np-menu-btn{display:inline-flex !important}}
 @media (max-width: 860px){.np-bento{grid-template-columns:repeat(1,minmax(0,1fr)) !important}.np-span2{grid-column:auto !important}}
 @media (max-width: 640px){section{scroll-margin-top:72px}}
+.np-kakao{background:#FEE500;color:#191919 !important;text-decoration:none;font-weight:700}
+.np-kakao:hover{background:#F5DC00;color:#191919 !important}
+.np-kakao-fab{position:fixed;right:20px;bottom:20px;z-index:60;display:inline-flex;align-items:center;gap:8px;min-height:56px;padding:0 22px 0 18px;border-radius:999px;font-size:15px;box-shadow:0 8px 24px rgba(20,18,12,0.22)}
+@media (max-width: 640px){.np-head-kakao{display:none !important}.np-kakao-fab{right:16px;bottom:16px;width:58px;height:58px;min-height:58px;padding:0;justify-content:center}.np-kakao-fab span{display:none}}
 </style>
 </head>
 <body>
@@ -50,7 +54,8 @@ input,select,textarea,button{font-family:inherit}
       <a href="#references" style="color: #23211A; text-decoration: none">레퍼런스</a>
     </nav>
     <div style="display: flex; align-items: center; gap: 10px">
-      <a href="#contact" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 999px; background: #2B2618; color: #FFFFFF; text-decoration: none; font-size: 14px; font-weight: 700">상담 신청</a>
+      <a href="https://pf.kakao.com/_Cpkpn/chat" target="_blank" rel="noopener" class="np-kakao np-head-kakao" style="display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 18px; border-radius: 999px; font-size: 14px"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#191919" d="M12 3.2c-5.2 0-9.4 3.3-9.4 7.4 0 2.6 1.7 4.9 4.3 6.2l-1 3.7c-.1.3.3.6.6.4l4.4-2.9c.4 0 .7.1 1.1.1 5.2 0 9.4-3.3 9.4-7.4S17.2 3.2 12 3.2z"/></svg>카카오톡 상담</a>
+      <a href="#contact" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; white-space: nowrap; border-radius: 999px; background: #2B2618; color: #FFFFFF; text-decoration: none; font-size: 14px; font-weight: 700">상담 신청</a>
       <button type="button" class="np-menu-btn" aria-label="전체 메뉴" aria-expanded="false" aria-controls="np-mobile-nav" style="width: 44px; height: 44px; border: 0; background: transparent; display: inline-flex; align-items: center; justify-content: center; cursor: pointer">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#23211A" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></svg>
       </button>
@@ -64,6 +69,7 @@ input,select,textarea,button{font-family:inherit}
     <a href="#app" style="display: block; padding: 12px 0; color: #23211A; text-decoration: none; font-weight: 600">손위생 앱</a>
     <a href="#references" style="display: block; padding: 12px 0; color: #23211A; text-decoration: none; font-weight: 600">레퍼런스</a>
     <a href="#contact" style="display: block; padding: 12px 0; color: #23211A; text-decoration: none; font-weight: 600">상담 신청</a>
+    <a href="https://pf.kakao.com/_Cpkpn/chat" target="_blank" rel="noopener" style="display: block; padding: 12px 0; color: #23211A; text-decoration: none; font-weight: 600">카카오톡 상담</a>
   </nav>
 </header>
 
@@ -76,9 +82,12 @@ input,select,textarea,button{font-family:inherit}
       <p style="margin: 0 0 22px; display: inline-flex; align-self: flex-start; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; background: rgba(43,38,24,0.08); font-size: 13px; font-weight: 700; color: #6B5D36">의료기관 평가인증 전문 컨설팅 · SINCE 2013</p>
       <h1 style="margin: 0; font-weight: 800; font-size: clamp(36px, 4.6vw, 64px); line-height: 1.22; letter-spacing: -0.04em; color: #23211A">대행이 아닌,<br>병원에 필요한 것을<br>찾아주는 컨설팅</h1>
       <p style="margin: 26px 0 0; max-width: 520px; font-size: 18px; line-height: 1.8; color: #4A4538">진단분석부터 전략수립, 실행까지. 늘품은 우리 병원에 맞춘 인증 솔루션으로 인증 이후의 지속적인 성장까지 함께합니다.</p>
-      <a href="#services" style="margin-top: 36px; align-self: flex-start; display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 0 26px; border-radius: 12px; background: #2B2618; color: #FFFFFF; text-decoration: none; font-size: 15px; font-weight: 700">컨설팅 서비스 보기
+      <div style="margin-top: 36px; display: flex; flex-wrap: wrap; gap: 12px">
+      <a href="#services" style="display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 0 26px; border-radius: 12px; background: #2B2618; color: #FFFFFF; text-decoration: none; font-size: 15px; font-weight: 700">컨설팅 서비스 보기
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
       </a>
+      <a href="https://pf.kakao.com/_Cpkpn/chat" target="_blank" rel="noopener" class="np-kakao" style="display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 12px; font-size: 15px"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="#191919" d="M12 3.2c-5.2 0-9.4 3.3-9.4 7.4 0 2.6 1.7 4.9 4.3 6.2l-1 3.7c-.1.3.3.6.6.4l4.4-2.9c.4 0 .7.1 1.1.1 5.2 0 9.4-3.3 9.4-7.4S17.2 3.2 12 3.2z"/></svg>카카오톡으로 상담하기</a>
+    </div>
     </div>
     <div style="position: relative; flex: 1 1 320px; min-width: 0; max-width: 420px; padding: 24px; display: flex; flex-direction: column; justify-content: flex-start; gap: 14px; margin-left: auto">
       <div style="border-radius: 20px; background: rgba(43,38,24,0.78); color: #FBF8F0; padding: 26px 26px 22px">
@@ -543,7 +552,10 @@ input,select,textarea,button{font-family:inherit}
           <div style="display: flex; gap: 20px; padding: 14px 0; border-top: 1px solid rgba(251,248,240,0.14)"><span style="flex: 0 0 56px; color: #BDB397">담당</span><span>안종태 대표</span></div>
           <div style="display: flex; gap: 20px; padding: 14px 0; border-top: 1px solid rgba(251,248,240,0.14)"><span style="flex: 0 0 56px; color: #BDB397">전화</span><a href="tel:010-7291-0333" style="color: #FBF8F0">010-7291-0333</a></div>
           <div style="display: flex; gap: 20px; padding: 14px 0; border-top: 1px solid rgba(251,248,240,0.14)"><span style="flex: 0 0 56px; color: #BDB397">이메일</span><a href="mailto:npconsulting@naver.com" style="color: #FBF8F0">npconsulting@naver.com</a></div>
+          <div style="display: flex; gap: 20px; padding: 14px 0; border-top: 1px solid rgba(251,248,240,0.14)"><span style="flex: 0 0 56px; color: #BDB397">카카오톡</span><a href="https://pf.kakao.com/_Cpkpn/chat" target="_blank" rel="noopener" style="color: #FBF8F0">늘품컨설팅 채널</a></div>
         </div>
+        <a href="https://pf.kakao.com/_Cpkpn/chat" target="_blank" rel="noopener" class="np-kakao" style="margin-top: 22px; display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; border-radius: 12px; font-size: 16px"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path fill="#191919" d="M12 3.2c-5.2 0-9.4 3.3-9.4 7.4 0 2.6 1.7 4.9 4.3 6.2l-1 3.7c-.1.3.3.6.6.4l4.4-2.9c.4 0 .7.1 1.1.1 5.2 0 9.4-3.3 9.4-7.4S17.2 3.2 12 3.2z"/></svg>카카오톡으로 바로 상담하기</a>
+        <p style="margin: 10px 0 0; font-size: 13px; color: #BDB397">채팅창이 열리면 기관명과 문의 내용을 남겨 주세요. 확인 후 바로 답변드립니다.</p>
       </div>
       <form id="contact-form" class="np-form" style="flex: 1 1 520px; min-width: 0; border-radius: 24px; background: #FBF8F0; color: #23211A; padding: 36px; display: flex; flex-direction: column; gap: 16px">
         <p style="margin: 0; font-size: 22px; font-weight: 800">무료 진단 상담 신청</p>
@@ -559,6 +571,7 @@ input,select,textarea,button{font-family:inherit}
         <label style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #5F5A4C; min-height: 44px"><input type="checkbox" name="agree" required style="width: 20px; height: 20px; accent-color: #6B5D36">개인정보 수집·이용에 동의합니다. (필수)</label>
         <p style="margin: 0; font-size: 13px; color: #5F5A4C">신청하기를 누르면 입력하신 내용으로 메일 작성 창이 열립니다. 전송하시면 담당자가 확인 후 연락드립니다.</p>
         <button type="submit" style="min-height: 54px; border: 0; border-radius: 12px; background: #2B2618; color: #FFFFFF; font-size: 16px; font-weight: 800; cursor: pointer">상담 신청하기</button>
+        <a href="https://pf.kakao.com/_Cpkpn/chat" target="_blank" rel="noopener" style="align-self: center; display: inline-flex; align-items: center; gap: 6px; min-height: 44px; color: #5F5A4C; font-size: 14px; font-weight: 700"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#191919" d="M12 3.2c-5.2 0-9.4 3.3-9.4 7.4 0 2.6 1.7 4.9 4.3 6.2l-1 3.7c-.1.3.3.6.6.4l4.4-2.9c.4 0 .7.1 1.1.1 5.2 0 9.4-3.3 9.4-7.4S17.2 3.2 12 3.2z"/></svg>메일이 번거로우시면 카카오톡으로 상담하기</a>
       </form>
     </div>
   </div>
@@ -591,5 +604,6 @@ input,select,textarea,button{font-family:inherit}
     location.href='mailto:npconsulting@naver.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(lines.join('\n'));});}
 })();
 </script>
+<a href="https://pf.kakao.com/_Cpkpn/chat" target="_blank" rel="noopener" class="np-kakao np-kakao-fab" aria-label="카카오톡 상담"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path fill="#191919" d="M12 3.2c-5.2 0-9.4 3.3-9.4 7.4 0 2.6 1.7 4.9 4.3 6.2l-1 3.7c-.1.3.3.6.6.4l4.4-2.9c.4 0 .7.1 1.1.1 5.2 0 9.4-3.3 9.4-7.4S17.2 3.2 12 3.2z"/></svg><span>카카오톡 상담</span></a>
 </body>
 </html>
